@@ -39,6 +39,7 @@ export async function POST (request: NextRequest){
             token: token
         })
         response.cookies.set("token", token, {httpOnly : true}) //1hr;
+        console.log("token", token)
         return response;
 
         
